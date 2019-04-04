@@ -1,33 +1,130 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body { 
+  background-image: url("https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  height: 1200px; /* possibly float all of your JSX elements so that they are just gliding over image */
 }
+/* Fix so that you can get images in the images folder to be inserted as the background-image  */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_header { 
+  background-color: #101010;
+  height: 70px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* border: 2px solid white; */
+}
+
+.inner_header {
+  /* background-color: red; */
+  width: 70%;
+  display: flex;
+  align-items: center;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid white; */
+}
+
+.logo_header {
+  float: left;
+  /* border: 2px solid white; */
+}
+
+.logo_header h1 {
+color: white;
+font-family: Cambria;
+font-size: 25px;
+font-weight: 100;
+}
+
+.logo_header h1 span {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#Us {
+  font-size: 14px;
+}
+
+.button_box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+button {
+  height: 40px;
+  width: 100px;
   color: white;
+  font-family: Cambria;
+  font-size: 15px;
+  background-color: orangered;
+  border: none;
+  box-shadow: 0px 0px 10px 5px;
+  /* box-shadow: -5px 5px 5px black; */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  height: 40px;
+  width: 100px;
+  /* transform: skew(-5deg); */
+  color: white;
+  opacity: .9;
+  font-family: Cambria;
+  font-size: 15px;
+  background-color: rgb(255, 177, 148);
+  border: none;
+  box-shadow: 0px 0px 10px 5px;
+  /* box-shadow: -5px 5px 5px black; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submarine_space {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  /* border: 1px solid white; */
+  height: 600px;
+  width: 100%;
 }
+
+
+.submarine {
+background-color: rgb(133, 139, 47);
+width: 600px;
+height: 100%;
+transition: transform .2s ease;
+border-radius: 40%;
+box-shadow: -30px 30px 13px rgb(5, 5, 5, .4);
+display: flex;
+justify-content: center;
+align-items: center;
+border-width: 4px 4px 4px 4px;
+border-style: solid;
+border-color: rgb(252, 250, 250, .05) rgb(252, 250, 250, .05) rgb(5, 5, 5, .05) rgb(5, 5, 5, .05);
+}
+
+.submarine:hover {
+background-color: rgb(133, 139, 47);
+width: 600px;
+height: 100%;
+transform:scale(1.1, 1.1) rotate(10deg);
+border-radius: 40%;
+box-shadow: -30px 30px 13px rgb(5, 5, 5, .4);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.sub_window {
+  background-color: rgb(5, 5, 5, .1);
+  width: 400px; 
+  height: 67.7%;
+  border-radius: 40%;
+  border-width: 6px 6px 6px 6px;
+  border-style: solid;
+  border-color: rgb(5, 5, 5, .01) rgb(5, 5, 5, .01) rgb(252, 250, 250, .05) rgb(252, 250, 250, .05);
+}
+
+
